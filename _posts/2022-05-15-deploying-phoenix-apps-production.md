@@ -26,6 +26,7 @@ be done with Github Actions, so this is all we need here.
 
 We take an Ubuntu machine and build the Elixir release on it. 
 
+{% raw %}
 ```yaml
 name: Elixir CI
 
@@ -62,6 +63,7 @@ jobs:
     - name: Create Release
       run: mix release
 ```
+{% endraw %}
 Now we'll make some configurations on the server before transferring the release.
 
 ### Server Setup
